@@ -31,9 +31,9 @@ checkout = async(body) => {
             }
         },
         back_urls: {
-            success: 'https://bintelligence.net/jormendoza/success',
-            failure: 'https://bintelligence.net/jormendoza/failure',
-            pending: 'https://bintelligence.net/jormendoza/pending'
+            success: 'https://bintelligence.net/jormendoza/success.php',
+            failure: 'https://bintelligence.net/jormendoza/failure.php',
+            pending: ' https://bintelligence.net/jormendoza/pending.php'
         },
         auto_return: 'approved',
         payment_methods: {

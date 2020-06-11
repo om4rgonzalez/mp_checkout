@@ -45,7 +45,7 @@ checkout = async(body) => {
             }],
             installments: 6
         },
-        notification_url: 'https://www.your-site.com/ipn',
+        notification_url: 'https://bintelligence.net:4001/notification',
         external_reference: body.developer.email,
         expires: true,
         expiration_date_from: '2020-01-01T12:00:00.000-04:00',

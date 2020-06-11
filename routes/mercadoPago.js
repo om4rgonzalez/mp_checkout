@@ -16,7 +16,9 @@ router.post('/checkout/', async function(req, res) {
 
 router.post('/notification', async function(req, res) {
     console.log(req.body);
-    res.status(200);
+    res.json({
+        ok: true
+    });
 });
 
 

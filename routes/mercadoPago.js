@@ -7,14 +7,16 @@ router.use(bodyParser.urlencoded({ extended: true }))
 router.use(bodyParser.json());
 
 router.post('/checkout/', async function(req, res) {
-    console.log('Llega la peticion a get products');
-    let response = mercadoPagoController.checkout();
+    let response = await mercadoPagoController.checkout(req.body);
     res.json({
-        ok: true
+        ok: true,
+        response
     });
 });
 
-
+router.post('/notification', async function(req, res) {
+    console.log(req.body);
+});
 
 
 

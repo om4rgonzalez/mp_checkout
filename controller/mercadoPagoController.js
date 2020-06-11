@@ -31,9 +31,9 @@ checkout = async(body) => {
             }
         },
         back_urls: {
-            success: 'http://bintelligence.net/jormendoza/success',
-            failure: 'http://bintelligence.net/jormendoza/failure',
-            pending: 'http://bintelligence.net/jormendoza/pending'
+            success: 'https://bintelligence.net/jormendoza/success',
+            failure: 'https://bintelligence.net/jormendoza/failure',
+            pending: 'https://bintelligence.net/jormendoza/pending'
         },
         auto_return: 'approved',
         payment_methods: {
@@ -70,7 +70,6 @@ checkout = async(body) => {
 
     await mercadopago.preferences.create(preference)
         .then(function(response) {
-            // Este valor reemplazará el string '$$init_point$$' en tu HTML
             global.init_point = response.body.init_point;
             console.log(global.init_point);
             urlFinal = global.init_point;

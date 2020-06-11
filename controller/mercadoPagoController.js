@@ -55,7 +55,7 @@ checkout = async(body) => {
 
     body.productos.forEach(producto => {
         preference.items.push({
-            id: producto.id,
+            id: '1234',
             title: producto.nombreProducto,
             currency_id: 'ARS',
             picture_url: producto.URI,
